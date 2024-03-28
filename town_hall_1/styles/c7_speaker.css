@@ -45,6 +45,58 @@ header img {
 .shadow {
 	text-shadow: 2px 2px 2px #800000;
 }
+
+/* Styles for the nav menu */
+#nav_menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+
+#nav_menu ul li {
+	float: left;
+}
+
+#nav_menu ul ul {
+	position: absolute;
+	top: 100%;
+	display: none;
+}
+
+#nav_menu ul li:hover > ul {
+	display: block;
+}
+
+#nav_menu ul ul li {
+	float: none;
+}
+
+#nav_menu > ul::after {
+	content: "";
+	clear: both;
+	display: block;
+}
+
+li a {
+	display: block;
+	width: 160px;
+	text-align: center;
+	padding: 1em 0;
+	text-decoration: none;
+	background: #800000;
+	color: white;
+	font-weight: bold;
+}
+
+.current {
+	color: yellow;
+}
+
+#tickets_list {
+	list-style-type: circle;
+}
+
 /* the styles for the main content */
 main {
 	clear: left;
